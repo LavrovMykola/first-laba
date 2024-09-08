@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first-laba</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <p>5. Вивести на сторінці список бригад. Вигляд списку наведено нижче:</p>
+    <ul>
+        <li> Підгрупа 1
+            <ol>
+                <li>Бригада
+                    <ul>
+                        <li>Студент 1</li>
+                        <li>Студент 2</li>
+                    </ul>
+                </li>
+                <li>Бригада
+                    <ul>
+                        <li>Студент 3</li>
+                        <li>Студент 4</li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+        <li> Підгрупа 2
+            <ol>
+                <li>Бригада
+                    <ul>
+                        <li>Студент 5</li>
+                        <li>Студент 6</li>
+                    </ul>
+                </li>
+                <li>Бригада
+                    <ul>
+                        <li>Студент 7</li>
+                        <li>Студент 8</li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+    </ul>
+
+    <p>6. Вивести розклад занять у вигляді</p>
+
+    <table>
+        <tr>
+            <th>День / урок</th>
+            <th>Тиждень</th>
+            <th>Урок 1</th>
+            <th>Урок 2</th>
+            <th>Урок 3</th>
+            <th>Урок 4</th>
+            <th>Урок 5</th>
+            <th>Урок 6</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td>Понеділок</td>
+                <td>І</td>
+                <td rowspan="2" colspan="2">Лекція 5119 <br> Лекція 5119</td>
+                <td rowspan="2" colspan="2">ЛР 5125 <br> ЛР 5125</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Понеділок</td>
+                <td>ІІ</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="2">Вівторок</td>
+                <td>І <br> <br> ІІ</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Лекція <br> 5119</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>7. Додати форму для додавання студента. Вигдляд форми наведено на рис.</p>
+
+    <div class="box">
+        <input type="radio" name="radio" id="radio"> Підгрупа 1
+        <input type="radio" name="radio" id="radio"> Підгрупа 1 <br>
+        <select name="marks" id="marks">
+            <option value="1">Бригада 1</option>
+            <option value="2">Бригада 2</option>
+            <option value="3">Бригада 3</option>
+            <option value="4">Бригада 4</option>
+            <option value="5">Бригада 5</option>
+            <option value="6">Бригада 6</option>
+        </select>
+        <p>Прізвище <textarea name="textarea" id="textarea" cols="10" rows="1"></textarea></p>
+        <p>Ім'я <textarea name="textarea" id="textarea" cols="10" rows="1"></textarea></p>
+        <button class="button" type="button">Додати студента</button>
+        
+    </div>
+
+</body>
+
+</html>
